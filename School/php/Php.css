@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+}
+/*----------------Welcome--------------------------------*/
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-size: cover;
+    background-image: linear-gradient(45deg, rgba(118, 118, 119, 0.7),rgba(39, 77, 230, 0.7)),url(Images/SchoolBackground.jfif);
+}
+.container .content {
+    text-align: center;
+}
+.container .content h3 {
+    color: #ff4436;
+    font-size: 28px;
+}
+.container .content h3 span {
+    padding: 0 5px;
+}
+.container .content h1 {
+    font-size: 45px;
+    color: black;
+}
+.container .content h1 span {
+    color: #ff4436;
+}
+.container .content p {
+    font: 24px;
+    margin-bottom: 20px;
+}
+.container .content .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #ff4436;
+    color: blue;
+    margin: 0 5px;
+    text-transform: capitalize;
+}
+.container .content .btn:hover {
+    background: grey;
+}
+
+
+
+/*-----------------------Registration----------------------*/
+
+.form {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-size: cover;
+    background-image: linear-gradient(45deg, rgba(118, 118, 119, 0.7),rgba(39, 77, 230, 0.7)),url(Images/SchoolBackground.jfif);
+}
+.form form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: linear-gradient(45deg, #088fc5b6, #b1077c);
+    text-align: center;
+    width: 550px;
+}
+.form form h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #222;
+}
+.form form input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+}
+.form form input,
+.form form select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 5px;
+}
+.form form select option {
+    background: #fff;
+}
+.form form .form-btn {
+    background: #ff4436;
+    color: blue;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form form .form-btn:hover {
+    background: #222;
+    color: #eee;
+}
+.form form p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ccc;
+}
+.form form p a {
+    color: #fff;
+    text-decoration: underline;
+}
+.form form p a:hover {
+    color: red;
+}
+/*----Error php-----------------*/
+.form form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background: #ff4436;
+    color: #eee;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 7px;
+}

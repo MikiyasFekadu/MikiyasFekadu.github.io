@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AUXILIUM CATHOLIC SCHOOL</title>
+    <meta name="viewport" content="width= device width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="School Demo.css" />
+    <!----------------Font Awesome icons------------------>
+    <script
+      src="https://kit.fontawesome.com/3496963c06.js"
+      crossorigin="anonymous"
+    ></script>
+    <!----------------Google Fonts---------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!---------Cloud Flare------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--------------------HEADER--------------------------------->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/Logo.jpg" class="Logo" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-xmark" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              NEWS
+              <div class="dropdown-list">
+                <ul>
+                  <li><a href="KG-News.html">Kindergarten</a></li>
+                  <li><a href="Primary-news.html">Elementary</a></li>
+                  <li><a href="Highschool-News.html">High-School</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              EXPLORE
+              <div class="dropdown-list">
+                <ul>
+                  <li>
+                    <a href="Rules & Regulation.html">Rules & Regulation</a>
+                  </li>
+                  <li><a href="Prayers.html">Prayers & Anthem</a></li>
+                  <li><a href="DonBosco.html">Story about the Founder</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+            <li>
+              <a href="My Profile.html"><img src="images/Noprofile.jpg" class="profile" /></a>
+              <div class="dropdown-list">
+                <ul>
+                  <li>
+                    <a href="Registration.html"
+                      ><i class="fa-solid fa-user"></i>Register</a
+                    >
+                  </li>
+                  <li>
+                    <a href="Logout.html"
+                      ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <h1>In Today's News</h1>
+    </section>
+    <!---------------News Content--------------------------------------------------->
+    <section class="news-content">
+      <div class="row">
+        <div class="news-left">
+          <img src="images/Stud-meeting.jpg" />
+          <h2>In Today's News</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            dicta ad assumenda at delectus, est totam fugiat. Debitis minima.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum est
+            ut mollitia modi unde! Distinctio pariatur quasi ut, soluta
+            dignissimos illo nostrum, excepturi accusamus enim ab dolorum modi
+            cupiditate totam.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+            aliquam nihil quos hic est aspernatur necessitatibus, officia
+            reiciendis velit molestias enim magnam! Eum qui cupiditate aut odio
+            dolore, vero nostrum!
+          </p>
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="text" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                POST COMMENT
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="news-right">
+          <h3></h3>
+        </div>
+      </div>
+    </section>
+    <!----------------Pagintaion-------------------------
+ <div class="container">
+<div class="pagintaion">
+<button class="btn1" onclick="backBtn()">Prev</button>
+<ul>
+  <li class="link active" value="1" onclick="activeLink()">1</li>
+  <li class="link" value="2" onclick="activeLink()">2</li>
+  <li class="link" value="3" onclick="activeLink()">3</li>
+  <li class="link" value="4" onclick="activeLink()">4</li>
+  <li class="link" value="5" onclick="activeLink()">5</li>
+</ul>
+<button class="btn2" onclick="nextBtn()">Next</button>
+</div>
+</div>--->
+    <!----Pagintation for mobiles------>
+
+    <!----------------<center>          Previous and Next bar
+<div class="smallpage">
+  <a href="" class="prev">Prev</a>
+  <a href="" class="next">Next</a>
+</div>
+</center>-------------->
+    <!-------------------FOOTER-------------------------------------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>This Website was made by Grade 12 students of this School</p>
+      <div class="icons">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa fa-telegram"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials.</p>
+    </section>
+    <!----------------Menu Open and Close in JavaScript------------------->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+    <!-------------Pagintation--------------------------->
+    <script>
+      let link = document.getElementsByClassName("link");
+      let currentValue = 1;
+      function activeLink() {
+        for (l of link) {
+          l.classList.remove("active");
+        }
+        event.target.classList.add("active");
+        currentValue = event.target.value;
+      }
+      function backBtn() {
+        if (currentValue > 1) {
+          for (l of link) {
+            l.classList.remove("active");
+          }
+          currentValue--;
+          link[currentValue - 1].classList.add("active");
+        }
+      }
+      function nextBtn() {
+        if (currentValue > 5) {
+          for (l of link) {
+            l.classList.remove("active");
+          }
+          currentValue++;
+          link[currentValue - 1].classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>

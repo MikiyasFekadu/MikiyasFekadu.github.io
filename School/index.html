@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width= device width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="School Demo.css" />
+    <!----------------Google Fonts---------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!---------Cloud Flare------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>AUXILUIUM CATHOLIC SCHOOL</title>
+    <link rel="icon" herf="Images/Logo.jpg" type="Image/x-icon">
+    <!----------------Font Awesome icons------------------>
+    <script
+      src="https://kit.fontawesome.com/3496963c06.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--------------------HEADER-------------->
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="Images/Logo.jpg" class="Logo" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-xmark" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              NEWS
+              <div class="dropdown-list">
+                <ul>
+                  <li><a href="KGNews.html">Kindergarten</a></li>
+                  <li><a href="ElementaryNews.html">Elementary</a></li>
+                  <li><a href="HighschoolNews.html">High-School</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              EXPLORE
+              <div class="dropdown-list">
+                <ul>
+                  <li>
+                    <a href="Rules & Regulation.html">Rules & Regulation</a>
+                  </li>
+                  <li><a href="Prayers.html">Prayers & Anthem</a></li>
+                  <li><a href="DonBosco.html">Story about the Founder</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+            <!----<li>
+              <a href="Welcome.php">Signin</a>
+              <div class="dropdown-list">
+                <ul>
+                  <li>
+                    <a href="Registration.php"
+                      ><i class="fa-solid fa-user"></i>Register</a
+                    >
+                  </li>
+                  <li>
+                    <a href="Login.php"
+                      ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+                    >
+                  </li>---->
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>AUXILIUM CATHOLIC SCHOOL</h1>
+        <p>
+          Place where you can run, jump and play <br />
+          as long as you don't commit sins
+        </p>
+        <a href="About.html" class="hero-btn">Learn More About Us</a>
+      </div>
+    </section>
+    <!--------------------NEWS------------------------>
+    <section class="News">
+      <h1>Daily News</h1>
+      <p>
+        Here News about the School, School meeting and Important or Breaking
+        news are posted.
+      </p>
+      <!-----------------The Three Rows in Daily News--------------------------------------------------->
+      <div class="row">
+        <div class="News-col">
+          <a href="KG-news.html"><img src="Images/SchoolBackground.jfif" /></a>
+          <h3>Kindergarten</h3>
+          <p></p>
+        </div>
+        <div class="News-col">
+          <a href="Primary-news.html"><img src="Images/Stud-meeting.jpg" /></a>
+          <h3>Elementary</h3>
+          <p></p>
+        </div>
+        <div class="News-col">
+          <a href="Highschool-News.html"
+            ><img src="Images/Stud-meeting.jpg"
+          /></a>
+          <h3>High-School</h3>
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <!---------------EXPLORE-------------------------------------->
+    <section class="Explore">
+      <h1>Explore About Us</h1>
+      <p>Learn more about the School and what it teaches.</p>
+      <!-----------------------The Three rows in Explore-------------------------------------------------->
+      <div class="row">
+        <div class="Explore-col">
+          <a href="Rules & Regulation.html"
+            ><img src="Images/Rules & Regulation5.jfif"
+          /></a>
+          <h3>Rules And Regulations</h3>
+          <p></p>
+        </div>
+        <div class="Explore-col">
+          <a href="Prayers.html"><img src="Images/Prayers.jfif" /></a>
+          <h3>Prayers & Anthem</h3>
+          <p></p>
+        </div>
+        <div class="Explore-col">
+          <a href="DonBosco.html"><img src="Images\DonBosco.jfif" /></a>
+          <h3>Stories About The Founder</h3>
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <!-----------------CONTACT------------------------------------>
+    <div class="white">
+    <section class="cta">
+      <h1>Contact Us For Any Further Questions</h1>
+      <a href="Contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+  </div>
+    <!-------------------FOOTER------------------------------------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>This Website was made by Grade 12 students of this School</p>
+      <div class="icons">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa fa-telegram"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials.</p>
+    </section>
+    <!--Menu Open and Close in JavaScript------------------->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

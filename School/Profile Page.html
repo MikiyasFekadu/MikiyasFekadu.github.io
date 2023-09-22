@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+    <HEAD>
+      <meta name="viewport" content="width= device width" , initial-scale="1.0" />
+        <link rel="stylesheet" href="School Demo.css">
+<!----------------Google Fonts---------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <title>AUXILUIUM CATHOLIC SCHOOL</title>
+<!----------------Font Awesome icons------------------>
+<script src="https://kit.fontawesome.com/3496963c06.js" crossorigin="anonymous"></script>
+    </HEAD>  
+    <BODY class="reg-body">
+        <!--------------------HEADER-------------->
+        <section>
+          <nav>
+            <a href="School Demo.html"><img src="images/Logo.jpg" class="Logo"></a>
+            <div class="nav-links" id="navlinks">
+              <i class="fa fa-xmark" onclick="hidemenu()"></i>
+              <ul>
+                <li><a href="Registration.html"><img src="images/Profile.jfif" class="profile"></a>
+                  <div class="dropdown-list">
+                    <ul>
+                    <li><a href="Login.html"><i class="fa-solid fa-user"></i> Edit Profile</a></li>
+                    <li><a href="Registration.html"><i class="fa-solid fa-right-from-bracket"></i> Registration</a></li>
+                    </ul>
+                    </div></li>
+                <li><a href="School Demo.html">HOME</a></li>
+                <li><a href="News.html">NEWS</a></li>
+                <li><a href="explore.html">EXPLORE</a>
+                  <div class="dropdown-list">
+                <ul>
+                  <li><a href="">Rules</a></li>
+                  <li><a href="">Prayers</a></li>
+                  <li><a href="DonBosco.html">Story about the Founder</a></li>
+                </ul>
+              </div></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+          </nav>
+        </section>
+
+              <!-------------------FOOTER------------------------------------->
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>This Website was made by Grade 12 students of this School</p>
+        <div class="icons">
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa fa-telegram"></i>
+          <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials.</p>
+      </section>
+      <!--Menu Open and Close in JavaScript------------------->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu () {
+        navlinks.style.right = "0";
+      }
+      function hidemenu () {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+    </body>
+</HTML>

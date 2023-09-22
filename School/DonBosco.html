@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width= device width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="School Demo.css" />
+    <!----------------Google Fonts---------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!---------Cloud Flare------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>AUXILUIUM CATHOLIC SCHOOL</title>
+    <!----------------Font Awesome icons------------------>
+    <script
+      src="https://kit.fontawesome.com/3496963c06.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--------------------HEADER-------------->
+    <section class="Sub-header">
+      <nav>
+        <a href="index.html"><img src="Images/Logo.jpg" class="Logo" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-xmark" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              NEWS
+              <div class="dropdown-list">
+                <ul>
+                  <li><a href="KGNews.html">Kindergarten</a></li>
+                  <li><a href="ElementaryNews.html">Elementary</a></li>
+                  <li><a href="HighschoolNews.html">High-School</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              EXPLORE
+              <div class="dropdown-list">
+                <ul>
+                  <li>
+                    <a href="Rules & Regulation.html">Rules & Regulation</a>
+                  </li>
+                  <li><a href="Prayers.html">Prayers & Anthem</a></li>
+                  <li><a href="DonBosco.html">Story about the Founder</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+            <!----<li>
+              <a href="Welcome.php">Signin</a>
+              <div class="dropdown-list">
+                <ul>
+                  <li>
+                    <a href="Registration.php"
+                      ><i class="fa-solid fa-user"></i>Register</a
+                    >
+                  </li>
+                  <li>
+                    <a href="Login.php"
+                      ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+                    >
+                  </li>---->
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <h1>Story about the Founder</h1>
+    </section>
+    <!-----------------DonBosco------------------------------------>
+    <section class="donbosco">
+      <div class="main">
+        <img src="Images\DonBosco 1.jfif" />
+        <div class="donbosco-text">
+          <dt><h5>Don Bosco</h5></dt>
+          <li>
+            John Melchior Bosco, popularly known as Don Bosco, was an Italian
+            Catholic priest, educator, writer and saint of the 19th century.
+          </li>
+          <li>
+            John Bosco was born on the evening of 16 August 1815 in the hillside
+            hamlet of Becchi, Italy. Becchi is located in a region that was
+            called Castelnuovo d'Asti, which was later renamed Castelnuovo Don
+            Bosco in honour of the saint.
+          </li>
+          <li>
+            He was the youngest son of Francesco Bosco (1784–1817) and
+            Margherita Occhiena. He had two older brothers, Antonio, and
+            Giuseppe (1813–1862). The Boscos of Becchi were farmhands of the
+            Moglian Family. John Bosco was born in a time of great shortage and
+            famine in the Piedmontese countryside,
+          </li>
+          <li>
+            When he was little more than two years old, his father, Francesco
+            died, which left the support of three boys to his mother,
+            Margherita. She played a strong role in Bosco's formation and
+            personality,[18] and was an early supporter of her son's ideals
+          </li>
+          <li>
+            The Salesians of Don Bosco (SDB), formally known as the Society of
+            Saint Francis de Sales, is a religious congregation of men in the
+            Catholic Church, founded in the late 19th century by Italian priest
+            Saint John Bosco to help poor children during the Industrial
+            Revolution. The congregation was named after Saint Francis de Sales,
+            a 17th-century bishop of Geneva.
+          </li>
+          <li>
+            The Salesian Sisters of Don Bosco, formally known as the Daughters
+            of Mary Help of Christians are a female religious institute formed
+            by Saint Maria Domenica Mazzarello in 1872. They were founded to
+            work alongside Saint John Bosco and his Salesians of Don Bosco in
+            his teaching projects in Turin.
+          </li>
+        </div>
+      </div>
+    </section>
+    <!-------------------FOOTER------------------------------------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>This Website was made by the students of this School</p>
+      <div class="icons">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa fa-telegram"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials.</p>
+    </section>
+    <!--Menu Open and Close in JavaScript------------------->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
