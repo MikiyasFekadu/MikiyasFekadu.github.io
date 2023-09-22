@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <title>Services</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <!----Google fonts-------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Courgette&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <!----Font awesome-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <a href="/index.html" class="logo">PortFolio,</a>
+        <nav id="nav">
+            <i class="fa-solid fa-x" onclick="hidemenu()"></i>
+            <a href="/index.html">Home</a>
+            <a href="/Projects.html">Projects</a>
+            <a href="/Services.html" class="active">Services</a>
+            <a href="/Contact.html">Contact</a>
+        </nav>
+        <div class="menu"><i class="fa-solid fa-bars" onclick="showmenu()"></i></div>
+    </div>
+    
+    <div class="services">
+        <h1>Services I Offer:</h1>
+        <div class="service">
+            <ul>
+                <li>Building and Designing Movie Website</li>
+                <li>Building and Designing Advertisment Website</li>
+            </ul>
+            <ul>
+                <li>Small Python Projects</li>
+                <li>Video Editing</li>
+            </ul>
+        </div>
+        <h1>Languages and Apps I use:</h1>
+        <div class="service-2">
+            <ul>
+                <li><i class="fa-brands fa-html5"></i> Html</li>
+                <li><i class="fa-brands fa-css3-alt"></i> Css</li>
+                <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                <li><i class="fa-brands fa-php"></i> Php</li>
+                <li><i class="fa-brands fa-python"></i> Python</li>
+                <li>SQL</li>
+                <li>Capcut</li>
+            </ul>
+        </div>
+        <h2>If you want to see some samples go to <a href="Projects.html">Projects</a>.</h2>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <div class="icons">
+                    <i class="fa-solid fa-phone" id="icon"></i>
+                    <p class="pop">+251987375010</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-envelope" id="icon"></i>
+                    <p class="pop">mikiyas2fekadu@gmail.com</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-telegram" id="icon"></i>     
+                    <p class="pop">@Darkacademia18</p>
+                </div>
+            </ul>
+            <h1>This Website was made by MySelf.</h1>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script src="node_modules/swup/dist/Swup.umd.js"></script>
+    <script>
+        var nav = document.getElementById("nav");
+        function showmenu() {
+            nav.style.left = "0";
+        }
+        function hidemenu() {
+            nav.style.left = "-35%";
+        }
+    </script>
+</body>
+</html>

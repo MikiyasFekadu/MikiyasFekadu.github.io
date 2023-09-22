@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <title>PortFolio</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <!----Google fonts-------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Courgette&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <!----Font awesome-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <a href="/index.html" class="logo">PortFolio,</a>
+        <nav id="nav">
+            <i class="fa-solid fa-x" onclick="hidemenu()"></i>
+            <a href="/index.html" class="active">Home</a>
+            <a href="/Projects.html">Projects</a>
+            <a href="/Services.html">Services</a>
+            <a href="/Contact.html">Contact</a>
+        </nav>
+        <div class="menu"><i class="fa-solid fa-bars" onclick="showmenu()"></i></div>
+    </div>
+    <main id="swup" class="transition-fade">
+        <div class="body">
+        <div class="body-left">
+            <h1>Hi, I am Mikiyas Fekadu</h1> <br>
+            <h2>Student</h2>
+            <p>I am 18 and currently working to become a website designer by learning on the internet. I maybe not of age and not have experience but age doesn't limit my skills and goals. So, to any of the people who want to work with me. The Contact button is down below. Don't be shy!</p>
+            <div class="buttons">
+               <a href="/Contact.html"><button class="btn-1">Contact</button></a> 
+            </div>            
+        </div>
+        <div class="body-right">
+            <div class="image"><img src="img/M1.png"></div>
+            <div class="image"><img src="img/B1.png"></div>
+            <div class="image"><img src="img/S1.png"></div>
+            <div class="image"><img src="img/M2.png"></div>
+            <a href="/Projects.html"><button class="btn-2">See More</button></a>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul>
+                <div class="icons">
+                    <i class="fa-solid fa-phone" id="icon"></i>
+                    <p class="pop">+251987375010</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-envelope" id="icon"></i>
+                    <p class="pop">mikiyas2fekadu@gmail.com</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-telegram" id="icon"></i>        
+                    <p class="pop">@Darkacademia18</p>
+                </div>
+            </ul>
+        <h1>This Website was made by MySelf.</h1>
+    </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script src="node_modules/swup/dist/Swup.umd.js"></script>
+    <script>
+        var nav = document.getElementById("nav");
+        function showmenu() {
+            nav.style.left = "0";
+        }
+        function hidemenu() {
+            nav.style.left = "-35%";
+        }
+    </script>
+</html>

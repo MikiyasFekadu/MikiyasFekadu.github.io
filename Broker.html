@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Projects</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <!----Google fonts-------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Courgette&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <!----Font awesome-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <a href="/index.html" class="logo">PortFolio,</a>
+        <nav id="nav">
+            <i class="fa-solid fa-x" onclick="hidemenu()"></i>
+            <a href="/index.html">Home</a>
+            <a href="/Projects.html" class="active">Projects</a>
+            <a href="/Services.html">Services</a>
+            <a href="/Contact.html">Contact</a>
+        </nav>
+        <div class="menu"><i class="fa-solid fa-bars" onclick="showmenu()"></i></div>
+    </div>
+    <main id="swup" class="transition-fade">
+    <div class="school">
+        <h1 class="school-h1">Broker Website</h1>
+        <iframe src="Broker/Broker.html"></iframe>
+        <div class="buttons">
+            <a href="Broker/Broker.html" target="_blank"><button class="centerbutton btn-2">View in Fullscreen</button></a> 
+         </div>  
+        <div class="description">
+            <div class="description-left">
+                <h1>Description</h1>
+                <p>This websites connects people who want to buy, rent or sell houses, apartments and offices.</p>
+                <h2>Limitations</h2>
+                <li>Made With Little Efforts</li>
+                <li>Have No Backend Languages</li>
+                <li>Not Visually Attractive</li>
+            </div>
+            <div class="description-right">
+                <h1>Used languages</h1>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul>
+                <div class="icons">
+                    <i class="fa-solid fa-phone" id="icon"></i>
+                    <p class="pop">+251987375010</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-envelope" id="icon"></i>
+                    <p class="pop">mikiyas2fekadu@gmail.com</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-telegram" id="icon"></i>        
+                    <p class="pop">@Darkacademia18</p>
+                </div>
+            </ul>
+            <h1>This Website was made by MySelf.</h1>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script src="node_modules/swup/dist/Swup.umd.js"></script>
+    <script>
+        var nav = document.getElementById("nav");
+        function showmenu() {
+            nav.style.left = "0";
+        }
+        function hidemenu() {
+            nav.style.left = "-35%";
+        }
+    </script>
+</body>
+</html>
