@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.header{
+    color: white;
+    background-color: gray;
+    font-size: 20pt;
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+ }
+ .header h2 {
+    font-size: 28px;
+    font-weight: 500;
+ }
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px;
+}
+.nav-links {
+    margin-left: 100px;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 7px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: grey;
+}
+.dropdown li {
+    display: block;
+    padding: 10px;
+}
+.dropdown {
+    padding: 5px;
+    height: 150px;
+    margin: 10px;
+    width: 180px;
+    background: red;
+    position: absolute;
+    z-index: 945;
+    display: none;
+}
+li:hover ul.dropdown {
+    display: block;
+}
+.sub-header {
+    height: 60vh;
+    width: 100%;
+    background-image:url(Background.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100%;
+    padding: 20px;
+}
+.sub-head h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+}
+.sub-head p {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.Appartement {
+    margin: auto;
+    padding: 60px 15px;
+    text-align: center;
+    width: 100%;
+    color: black;
+    background: #ccc;
+}
+.Appartement h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+.Appartement h0 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 100px;
+    padding: 20px;
+}
+.Appartement h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+.Appartement p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.house {
+    width: 390px;
+    background: linear-gradient(#666,brown,#fff);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+}
+.house img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.house h1 {
+    font-size: 20px;
+}
+.house h2 {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.house p {
+    font-size: 15px;
+    text-align: left;
+    padding: 5px;
+}
+.house iframe {
+    width: 400px;
+    border-radius: 10px;
+    margin: -5px;
+}
+footer {
+    background: #222;
+    height: 10vh;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+.icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 10px 0;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.icons li a{
+    margin: 0 15px;
+    font-size: 25px;
+    color: #fff;
+}
+.icons li a:hover {
+    color: brown;
+    transition: .3s;
+    cursor: pointer;
+}
+.members {
+    background: linear-gradient(red, black);
+    width: 100%;
+    height: 70vh;
+}
+.members div {
+    padding: 60px;
+    width: 400px;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 30%;
+}
+.members li {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px;
+}
+.header h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+    padding-bottom: 150px;
+}
+.sub-header h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+    padding-bottom: 200px;
+}
+.button {
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 15px;
+    align-items: center;
+    background-color: white;
+    color: red;
+    font-weight: 700;
+    margin: 10px;
+    border: 2px solid #222;
+    width: 200px;
+}
+.button:hover {
+    color: white;
+    background-color: brown;
+    transition: .4s ease;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+.services-s {
+    background: #ccc;
+    width: 100%;
+}
+.services {
+    margin: auto;
+    padding: 60px 15px;
+    text-align: left;
+    width: 90%;
+    color: black;
+}
+.services p {
+    font-size: 23px;
+    line-height: 55px;
+}
+.registration {
+    max-width: 100%;
+    width: 100%;
+    padding: 25px 30px;
+    height: 70vh;
+    background: linear-gradient( brown, black);
+}
+.registration form .details {
+    color: #ccc;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.details .form input {
+    height: 45px;
+    width: 400px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    padding-inline-start: 20px;
+}
+.details .form {
+    padding: 15px;
+    margin-left: 30%;
+}
+.registration h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-right: 100px;
+    color: white;
+}
+.form a {
+    color: white;
+}
+.contact {
+    position: relative;
+    min-height: 50vh;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.content p {
+    text-align: center;
+    padding: 10px;
+    font-size: 27px;
+}
+.comment-box {
+    border: 1px solid #ccc;
+    margin: 50px ;
+    padding: 10px 20px;
+    width: 600px;
+}
+.comment-box h3 {
+    text-align: left;
+}
+.comment-form input, .comment-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+.comment-form button {
+    margin: 10px 0;
+}
+.contact h2 {
+    font: 23px;
+    padding: 10px 0;
+    text-align: left;
+}
+.contact h3 {
+    font-weight: normal;
+}
+.contact1 {
+    margin: auto;
+    width: 80%;
+    background: linear-gradient(brown,#ccc);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0; 
+    margin: 20px 0 40px 0;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+.contact1 h1 {
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.contact1 a {
+    text-decoration: none;
+}
